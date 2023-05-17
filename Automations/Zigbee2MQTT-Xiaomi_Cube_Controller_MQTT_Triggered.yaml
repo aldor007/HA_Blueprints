@@ -635,7 +635,7 @@ blueprint:
       default: []
       selector:
         action: {}
-mode: single
+mode: restart
 max_exceeded: silent
 trigger:
   - platform: mqtt
