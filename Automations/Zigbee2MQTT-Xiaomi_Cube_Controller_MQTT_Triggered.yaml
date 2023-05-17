@@ -84,7 +84,9 @@ blueprint:
     min_version: 2023.3.0
   input:
     device_name:
-      name: Namer of the device
+      name: Name of the device
+      description: Name of the device
+      default: "?"
       selector:
         text:
           multiline: false
