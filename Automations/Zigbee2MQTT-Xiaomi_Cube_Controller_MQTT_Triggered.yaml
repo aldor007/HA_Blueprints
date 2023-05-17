@@ -658,7 +658,7 @@ action:
       # Get the topic as a variable.
     topic_var: !input topic
       # Generate the Friendly_name from the Topic.
-    friendly_name: '{{ topic_var.split(''/'')[1] | regex_replace("[^A-Za-z0-9]", "") }}'
+    friendly_name: '{{ topic_var.split(''/'')[1] }'
       # Generate the device_id from the Friendly_name.
     device_id: '{{ device_id( friendly_name ) }}'
       # Pull out the ieee identifier.
