@@ -667,7 +667,7 @@ action:
       # Generate the Friendly_name from the Topic.
     friendly_name: !input device_name
       # Generate the device_id from the Friendly_name.
-    device_id: '{{ device_id( !input device_name ) }}'
+    device_id: '{{ device_id( friendly_name ) }}'
       # Pull out the ieee identifier.
     ieee_id_long: '{{(( device_attr( device_id, ''identifiers'') |list)[0][1]) }}'
       # Generate just the number for the ieee.
